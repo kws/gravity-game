@@ -29,7 +29,7 @@ class Body:
             distance = math.sqrt(dx**2 + dy**2)
 
             force_mag = G * self.mass * body.mass / distance**2
-            force_mag = min(force_mag, 10e22)  # Limit the force to prevent instability
+            force_mag = min(force_mag, 10e25)  # Limit the force to prevent instability
 
             force_x = force_mag * dx / distance
             force_y = force_mag * dy / distance
